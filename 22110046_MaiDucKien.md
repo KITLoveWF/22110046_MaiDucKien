@@ -96,9 +96,29 @@ gcc lab1.c -o lab1.out -fno-stack-protector -mpreferred-stack-boundary=2
 ```
 ![Screenshot 2024-10-21 084953](https://github.com/user-attachments/assets/d1fea700-fd2a-411b-8109-65c0075384a8)
 
+### 3. Before doing this lab, we have to turn off ASLR (Address Space Layout Randomization)
+```
+sudo sysctl -w kernel.randomize_va_space=0
+```
+![image](https://github.com/user-attachments/assets/948e6588-a50f-4789-95e8-f61a7220a3c2)
+
+
+### 4. Now we create an environment variable in Linux with the path of file lab1.asm
+```
+nasm -g -f elf lab1.asm
+ld -m elf_i386 -o lab1 lab1.o
+pwd -> /home/seed/seclabs/bof
+export exploit_path="/seclabs/bof/file_del"
+```
+![image](https://github.com/user-attachments/assets/4bdb34cd-9bc4-44c7-8587-1a812d3e7ae8)
+![image](https://github.com/user-attachments/assets/6920c002-706d-46f6-8f61-6c2152812483)
+
 Stack Frame
 
 ![Screenshot 2024-10-21 084502](https://github.com/user-attachments/assets/db60e941-92ba-40e2-ac46-e87be41e66d6)
+
+
+
 
 **Conclusion**: comment text about the screenshot or simply answered text for the question
 
