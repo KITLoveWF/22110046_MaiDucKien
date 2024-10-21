@@ -72,8 +72,22 @@ _start:
 - Compile asm program and C program to executable code. 
 - Conduct the attack so that when C program is executed, the /etc/passwd file is copied to /tmp/pwfile. You are free to choose Code Injection or Environment Variable approach to do. 
 - Write step-by-step explanation and clearly comment on instructions and screenshots that you have made to successfully accomplished the attack.
+<br>
 **Answer 1**: Must conform to below structure:Description text (optional)
 
+
+Compile code c
+
+```
+nasm -f elf32 -o lab1.o lab1.asm
+```
+```
+ld -m elf_i386 -o lab1 lab1.o
+```
+```
+gcc lab1.c -o lab1.out -fno-stack-protector -mpreferred-stack-boundary=2
+```
+Run Docker
 ```
 docker build -t img4lab .
 ```
