@@ -72,7 +72,6 @@ _start:
 - Compile asm program and C program to executable code. 
 - Conduct the attack so that when C program is executed, the /etc/passwd file is copied to /tmp/pwfile. You are free to choose Code Injection or Environment Variable approach to do. 
 - Write step-by-step explanation and clearly comment on instructions and screenshots that you have made to successfully accomplished the attack.
-<br>
 **Answer 1**: Must conform to below structure:Description text (optional)
 
 
@@ -97,6 +96,23 @@ docker run -it --privileged -v $HOME/seclabs:/home/seed/seclabs img4lab
 
 
 **Conclusion**: comment text about the screenshot or simply answered text for the question
+
+
+# Task 2: Attack on database of DVWA
+- Install dvwa (on host machine or docker container)
+- Make sure you can login with default user
+- Install sqlmap
+- Write instructions and screenshots in the answer sections. Strictly follow the below structure for your writeup. 
+
+**Question 1**: Use sqlmap to get information about all available databases
+**Answer 1**:
+
+**Question 2**: Use sqlmap to get tables, users information
+**Answer 2**:
+
+**Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
+**Answer 3**:
+
 
 
 
