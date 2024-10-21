@@ -226,6 +226,7 @@ python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli/?id=&Submit=Subm
 
 
 **Question 2**: Use sqlmap to get tables, users information
+
 **Answer 2**:
 
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
