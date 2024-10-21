@@ -293,8 +293,9 @@ Result Login website by
 **Password : letmein**
 
 ![image](https://github.com/user-attachments/assets/9b4f0651-d958-4338-a099-0fc55cf1154e)
-
+<br>
 We can see the user pablo
+<br>
 ![image](https://github.com/user-attachments/assets/3c86df18-1a2a-456b-ac23-01bd72ad0f78)
 
 **Conclusion**: The vulnerability website was successfully exploited using sqlmap and sqlInjection code.
