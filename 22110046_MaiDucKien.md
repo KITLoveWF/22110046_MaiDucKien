@@ -113,9 +113,20 @@ export exploit_path="/seclabs/bof/file_del"
 ![image](https://github.com/user-attachments/assets/4bdb34cd-9bc4-44c7-8587-1a812d3e7ae8)
 ![image](https://github.com/user-attachments/assets/6920c002-706d-46f6-8f61-6c2152812483)
 
-Stack Frame
+### 5.Stack Frame
 
-![Screenshot 2024-10-21 084502](https://github.com/user-attachments/assets/db60e941-92ba-40e2-ac46-e87be41e66d6)
+![image](https://github.com/user-attachments/assets/f207d112-107d-4f72-9fe7-e85117ab4b8b)
+
+If we want to exploit
+
+68 bytes to overwrite buf and ebp
+4 bytes to overwrite ret addr of vuln with the address of system
+4 bytes for the address of exit
+4 bytes for argument of system (exploit path that we created before)
+
+### 6. Use gdb
+### 7. Attack File
+
 
 
 
