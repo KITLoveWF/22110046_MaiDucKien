@@ -94,7 +94,11 @@ ld -m elf_i386 -o lab1 lab1.o
 ```
 gcc lab1.c -o lab1.out -fno-stack-protector -mpreferred-stack-boundary=2
 ```
+![Screenshot 2024-10-21 084953](https://github.com/user-attachments/assets/d1fea700-fd2a-411b-8109-65c0075384a8)
 
+Stack Frame
+
+![Screenshot 2024-10-21 084502](https://github.com/user-attachments/assets/db60e941-92ba-40e2-ac46-e87be41e66d6)
 
 **Conclusion**: comment text about the screenshot or simply answered text for the question
 
