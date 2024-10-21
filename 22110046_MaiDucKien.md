@@ -153,7 +153,7 @@ find /home/seed/seclabs/bof/vullab1
 
 0xf7e50db0: Address of libc_system<br>
 0xf7e449e0: Address of exit to avoid crashing <br>
-0xffffd91a: Address of env variable <br>
+0xffffd914: Address of env variable <br>
 
 ### 7. Attack File
 
