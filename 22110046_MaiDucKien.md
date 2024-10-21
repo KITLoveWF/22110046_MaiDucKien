@@ -75,7 +75,7 @@ _start:
 **Answer 1**: Must conform to below structure:Description text (optional)
 
 
-Compile code c
+Compile asm program and c program
 
 ```
 nasm -f elf32 -o lab1.o lab1.asm
