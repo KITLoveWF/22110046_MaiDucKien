@@ -6,7 +6,7 @@ Given a vulnerable C program
 #include <string.h>
 void redundant_code(char* p)
 {
-    local[256];
+    char local[256];
     strncpy(local,p,20);
 	printf("redundant code\n");
 }
