@@ -210,6 +210,7 @@ git clone https://github.com/sqlmapproject/sqlmap
 
 
 **Question 1**: Use sqlmap to get information about all available databases
+<br>
 **Answer 1**:
 ### 1. Login
 User : admin <br>
