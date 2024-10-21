@@ -86,13 +86,14 @@ ld -m elf_i386 -o lab1 lab1.o
 ```
 gcc lab1.c -o lab1.out -fno-stack-protector -mpreferred-stack-boundary=2
 ```
-Run Docker
+###1. Build image Run Docker
 ```
 docker build -t img4lab .
 ```
 ```
 docker run -it --privileged -v $HOME/seclabs:/home/seed/seclabs img4lab
 ```
+![Screenshot 2024-10-21 083918](https://github.com/user-attachments/assets/b8ccbc09-5ff8-424e-bd36-c8b4a0c86ae8)
 
 
 **Conclusion**: comment text about the screenshot or simply answered text for the question
