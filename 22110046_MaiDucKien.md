@@ -71,7 +71,7 @@ _start:
 **Question 1**:
 - Compile asm program and C program to executable code. 
 - Conduct the attack so that when C program is executed, the /etc/passwd file is copied to /tmp/pwfile. You are free to choose Code Injection or Environment Variable approach to do. 
-- Write step-by-step explanation and clearly comment on instructions and screenshots that you have made to successfully accomplished the attack.
+- Write step-by-step explanation and clearly comment on instructions and screenshots that you have made to successfully accomplished the attack.<br>
 **Answer 1**: Must conform to below structure:Description text (optional)
 
 
@@ -149,9 +149,9 @@ find /home/seed/seclabs/bof/midterm/file_copy
 ![image](https://github.com/user-attachments/assets/30d8405e-cd3a-4476-a6fc-4f1a5c8a43f6)
 
 
-0xf7e50db0: Address of libc_system
-0xf7e449e0: Address of exit to avoid crashing
-0xffffd91a: Address of env variable
+0xf7e50db0: Address of libc_system<br>
+0xf7e449e0: Address of exit to avoid crashing <br>
+0xffffd91a: Address of env variable <br>
 
 ### 7. Attack File
 
