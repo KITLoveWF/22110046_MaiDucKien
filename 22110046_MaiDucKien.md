@@ -74,12 +74,13 @@ _start:
 - Write step-by-step explanation and clearly comment on instructions and screenshots that you have made to successfully accomplished the attack.
 **Answer 1**: Must conform to below structure:Description text (optional)
 
-
-``` 
-    code block (optional)
+```
+docker build -t img4lab .
+```
+```
+docker run -it --privileged -v $HOME/seclabs:/home/seed/seclabs img4lab
 ```
 
-output screenshot (optional)
 
 **Conclusion**: comment text about the screenshot or simply answered text for the question
 
