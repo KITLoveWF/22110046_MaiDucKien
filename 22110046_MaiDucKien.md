@@ -180,12 +180,9 @@ cat /tmp/outfile
 
 After attacking, we see that the asm program copy /etc/passwd to /tmp/outfile, not /tmp/pwfile
 
-Conclusion: The buffer overflow vulnerability in the C program was successfully exploited using shellcode injection.
+**Conclusion**: The buffer overflow vulnerability in the C program was successfully exploited using shellcode injection.
 
 
-
-
-**Conclusion**: comment text about the screenshot or simply answered text for the question
 
 
 # Task 2: Attack on database of DVWA
