@@ -277,11 +277,28 @@ Create file hashes.txt
 ```
 john --format=raw-md5 hashes.txt
 ```
-### 3. Show the password to crack
 
+Beside John Ripper, We can crack hashed by https://crackstation.net/
+
+### 3. Show the password to crack
+We can run John Ripper or website above
 ```
 john --show hashes.txt
 ```
+This is result 
+![image](https://github.com/user-attachments/assets/35feeec9-64c0-440d-9901-d41191151fcb)
+
+Result Login website by
+**UserName : pablo**
+**Password : letmein**
+
+![image](https://github.com/user-attachments/assets/9b4f0651-d958-4338-a099-0fc55cf1154e)
+
+We can see the user pablo
+![image](https://github.com/user-attachments/assets/3c86df18-1a2a-456b-ac23-01bd72ad0f78)
+
+**Conclusion**: The vulnerability website was successfully exploited using sqlmap and sqlInjection code.
+
 
 
 
