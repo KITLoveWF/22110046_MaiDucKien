@@ -274,7 +274,8 @@ python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli_blind/?id=1&Subm
 Result 
 <br>
 
-![image](https://github.com/user-attachments/assets/805d57a9-649b-488c-a73a-19d39cece45d)
+![Screenshot 2024-10-22 150935](https://github.com/user-attachments/assets/6a3e2d09-c5f4-4cd1-830e-4cc53b21f14c)
+
 
 Any Password is by hashed MD5 such as **8d3533d75ae2c3966d7e0d4fcc69216b**
 
@@ -301,8 +302,12 @@ We can run John Ripper or website above
 ```
 john --show hashes.txt
 ```
-This is result 
+This is result run by website
 ![image](https://github.com/user-attachments/assets/35feeec9-64c0-440d-9901-d41191151fcb)
+
+This is result run by sqlmap
+![image](https://github.com/user-attachments/assets/99df7adf-b301-4e63-9dc2-f34c54cf5255)
+
 
 Result Login website by
 <br>
