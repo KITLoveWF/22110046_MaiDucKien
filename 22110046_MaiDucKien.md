@@ -287,7 +287,7 @@ Any Password is by hashed MD5 such as **8d3533d75ae2c3966d7e0d4fcc69216b**
 ![Screenshot 2024-10-21 162619](https://github.com/user-attachments/assets/b34ce254-0e55-47c0-b24f-4032079409f7)
 
 In First Name is username and Sure Name is password hashed by MD5 or SHA256
-### 2. Run Jhon Ripper to crack file hash
+### 2. Run John Ripper to crack file hash
 Create file hashes.txt
 ![image](https://github.com/user-attachments/assets/9de36229-a6e9-48bf-8ccd-a1cc210a045c)
 
@@ -306,7 +306,7 @@ This is result run by website
 ![image](https://github.com/user-attachments/assets/35feeec9-64c0-440d-9901-d41191151fcb)
 
 This is result run by sqlmap
-![image](https://github.com/user-attachments/assets/99df7adf-b301-4e63-9dc2-f34c54cf5255)
+![Screenshot 2024-10-22 150919](https://github.com/user-attachments/assets/d4a128f8-5c16-45da-8240-3e469c33193d)
 
 
 Result Login website by
