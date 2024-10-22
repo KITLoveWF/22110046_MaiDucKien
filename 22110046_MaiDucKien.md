@@ -272,6 +272,8 @@ python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli_blind/?id=1&Subm
 
 <br>
 Result 
+<br>
+
 ![image](https://github.com/user-attachments/assets/805d57a9-649b-488c-a73a-19d39cece45d)
 
 Any Password is by hashed MD5 such as **8d3533d75ae2c3966d7e0d4fcc69216b**
