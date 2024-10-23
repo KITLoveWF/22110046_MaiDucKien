@@ -288,11 +288,12 @@ Any Password is by hashed MD5 such as **8d3533d75ae2c3966d7e0d4fcc69216b**
 
 In First Name is username and Sure Name is password hashed by MD5 or SHA256
 ### 2. Run John Ripper to crack file hash
-Create file hashes.txt
-![image](https://github.com/user-attachments/assets/9de36229-a6e9-48bf-8ccd-a1cc210a045c)
+Create file hash.txt
+![image](https://github.com/user-attachments/assets/8e4e32f4-9d73-4195-9260-7e7924a62301)
+
 
 ```
-john --format=raw-md5 hashes.txt
+./john --format=raw-md5 hash.txt
 ```
 
 Beside John Ripper, We can crack hashed by https://crackstation.net/
@@ -300,8 +301,11 @@ Beside John Ripper, We can crack hashed by https://crackstation.net/
 ### 3. Show the password to crack
 We can run John Ripper or website above
 ```
-john --show hashes.txt
+./john --show --format=raw-md5 hash.txt
 ```
+this is result run by john ripper
+![image](https://github.com/user-attachments/assets/0e1ed617-19fd-4581-b718-85aaa46852a0)
+
 This is result run by website
 ![image](https://github.com/user-attachments/assets/35feeec9-64c0-440d-9901-d41191151fcb)
 
