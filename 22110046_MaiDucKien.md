@@ -209,9 +209,6 @@ git clone https://github.com/sqlmapproject/sqlmap
 ![image](https://github.com/user-attachments/assets/40c856df-07ac-4798-8f11-42adb64d8bc7)
 
 
-**Question 1**: Use sqlmap to get information about all available databases
-<br>
-**Answer 1**:
 ### 1. Login
 User : admin <br>
 Password: password <br>
@@ -226,6 +223,9 @@ Password: password <br>
 
 
 ### 3. Attack
+**Question 1**: Use sqlmap to get information about all available databases
+<br>
+**Answer 1**:
 Use the command below to get information about all available databases
 <br>
 Before Attack
