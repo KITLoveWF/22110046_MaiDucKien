@@ -288,7 +288,7 @@ Any Password is by hashed MD5 such as **8d3533d75ae2c3966d7e0d4fcc69216b**
 
 In First Name is username and Sure Name is password hashed by MD5 or SHA256
 ### 2. Run John Ripper to crack file hash
-Create file hash.txt
+Create file hash.txt <br>
 ![image](https://github.com/user-attachments/assets/8e4e32f4-9d73-4195-9260-7e7924a62301)
 
 
